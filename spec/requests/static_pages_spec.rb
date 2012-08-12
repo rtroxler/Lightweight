@@ -9,10 +9,15 @@ describe "Static pages" do
         page.should have_content('Lightweight')
     end
 
-    it "Should have the right title.." do
+    it "Should have the base title.." do
         visit '/static_pages/home'
         page.should have_selector('title', 
-                                  :text => "Lightweight | Home")
+                                  :text => "Lightweight")
+    end
+
+    it "should not have a custom page title" do
+        visit '/static_pages/home'
+        page.should_not have_selector('title', :text => '| Home')
     end
   end
 
