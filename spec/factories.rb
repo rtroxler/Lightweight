@@ -10,5 +10,10 @@ FactoryGirl.define do
         end
     end
 
+    factory :post do
+        content "Titties."
+        user
+    end
+
 end
 
