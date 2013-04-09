@@ -1,4 +1,4 @@
-# Lightweight: Training Logs for Champions
+# Lightweight: Training Logs
 
 Built by [Ryan Troxler].
 
